@@ -18,7 +18,7 @@ $.searchArtists = function (query) {
     "Access-Control-Allow-Origin": '*',
     "Authorization": "Basic " + btoa("Admin" + ":" + "tristensteele")
     },
-    url:"http://localhost:57772/csp/pcd/info",
+    url:"https://localhost:57772/csp/pcd/info",
       success: function (response) {
         console.log(response);
       }
