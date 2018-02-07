@@ -6,17 +6,13 @@ $.callRest = function () {
     	success: function (response) {
     		$("#content").html(response);
         console.log(response);
-    	}
+    	},
+
+      error: function(error) {
+        console.log("Error: " + error);
+      }
 	});
 };
-
-// Callbacks for ajax token
-$.captureToken = function (r) {
-	token = JSON.parse(r).token;
-}
-$.capture = function (r) {
-	response = r["token"];
-}
 
 // Event handling
 $(document).ready(function() {
