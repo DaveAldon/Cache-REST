@@ -4,8 +4,7 @@ $.callRest = function () {
     type: "GET",
     dataType: "text",
     	success: function (response) {
-    		$("<p>").text(response.title).appendTo("body");
-        $("<div class=\"content\"/>").html(response.html).appendTo("body");
+    		$("#content").html(response);
         console.log(response);
     	}
 	});
